@@ -245,14 +245,9 @@ class AuthorCloneAdmin(admin.ModelAdmin):
     list_display = ('name','createdDate','updatedDate',)
     search_fields = ('name',)
 
-# @admin.register(QuestionSummary)
-# class QuestionSummaryAdmin(admin.ModelAdmin):
-#     pass
-
 
 site.register(Author, AuthorAdmin)
 site.register(Question,QuestionAdmin)
 site.register(Choice,ChoiceAdmin)
-site.register(AuthorClone, AuthorCloneAdmin)
 site.register(Group)
 site.register(User)
